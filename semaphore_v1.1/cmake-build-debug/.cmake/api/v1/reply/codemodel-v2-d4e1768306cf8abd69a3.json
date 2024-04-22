@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/macbookpro/CLionProjects/semaphore_v1.1/cmake-build-debug",
-		"source" : "/Users/macbookpro/CLionProjects/semaphore_v1.1"
+		"build" : "/Users/macbookpro/CLionProjects/OS_ihw2/semaphore_v1.1/cmake-build-debug",
+		"source" : "/Users/macbookpro/CLionProjects/OS_ihw2/semaphore_v1.1"
 	},
 	"version" : 
 	{

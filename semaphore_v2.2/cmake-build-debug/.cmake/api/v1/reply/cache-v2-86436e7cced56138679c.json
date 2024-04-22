@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/macbookpro/CLionProjects/semaphore_v1.1/cmake-build-debug"
+			"value" : "/Users/macbookpro/CLionProjects/OS_ihw2/semaphore_v2.2/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -383,7 +383,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/macbookpro/CLionProjects/semaphore_v1.1/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/macbookpro/CLionProjects/OS_ihw2/semaphore_v2.2/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -443,7 +443,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/macbookpro/CLionProjects/semaphore_v1.1"
+			"value" : "/Users/macbookpro/CLionProjects/OS_ihw2/semaphore_v2.2"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -723,7 +723,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "semaphore_v1_1"
+			"value" : "semaphore_v2_2"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1006,7 +1006,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "semaphore_v1_1_BINARY_DIR",
+			"name" : "semaphore_v2_2_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1015,10 +1015,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/macbookpro/CLionProjects/semaphore_v1.1/cmake-build-debug"
+			"value" : "/Users/macbookpro/CLionProjects/OS_ihw2/semaphore_v2.2/cmake-build-debug"
 		},
 		{
-			"name" : "semaphore_v1_1_IS_TOP_LEVEL",
+			"name" : "semaphore_v2_2_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1030,7 +1030,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "semaphore_v1_1_SOURCE_DIR",
+			"name" : "semaphore_v2_2_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1039,7 +1039,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/macbookpro/CLionProjects/semaphore_v1.1"
+			"value" : "/Users/macbookpro/CLionProjects/OS_ihw2/semaphore_v2.2"
 		}
 	],
 	"kind" : "cache",

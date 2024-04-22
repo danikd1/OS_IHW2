@@ -35,6 +35,17 @@ void handle_sigint(int sig) {
 }
 
 int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        fprintf(stderr, "Usage: %s <number_of_processes>\n", argv[0]);
+        return EXIT_FAILURE;
+    }
+
+    int num_processes = atoi(argv[1]);
+    if (num_processes <= 0) {
+        fprintf(stderr, "Number of processes must be greater than zero.\n");
+        return EXIT_FAILURE;
+    }
+
     signal(SIGINT, handle_sigint);
 
     shm_fd = shm_open(SHM_PATH, O_CREAT | O_RDWR, 0666);
@@ -49,19 +60,18 @@ int main(int argc, char *argv[]) {
         exit(EXIT_FAILURE);
     }
 
-    sem_init(&shared_data->sem, 1, 1);  // Второй аргумент '1' означает, что семафор разделяется между процессами
+    sem_init(&shared_data->sem, 1, 1);
 
     for (int i = 0; i < DB_SIZE; i++) {
         shared_data->data[i] = rand() % 20 + 1;
     }
 
     pid_t pid;
-    int n = 5;
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < num_processes; i++) {
         pid = fork();
-        if (pid == 0) {
-            if (i % 2 == 0) {
+        if (pid == 0) { // Дочерний процесс
+            if (i % 2 == 0) { // Писатели
                 while (1) {
                     sem_wait(&shared_data->sem);
                     int idx = rand() % DB_SIZE;
@@ -72,7 +82,7 @@ int main(int argc, char *argv[]) {
                     sem_post(&shared_data->sem);
                     sleep(1);
                 }
-            } else {
+            } else { // Читатели
                 while (1) {
                     int idx = rand() % DB_SIZE;
                     int val = shared_data->data[idx];
@@ -90,3 +100,4 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+
