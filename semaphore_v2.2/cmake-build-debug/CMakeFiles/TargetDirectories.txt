@@ -1,0 +1,3 @@
+/Users/macbookpro/CLionProjects/semaphore_v2.2/cmake-build-debug/CMakeFiles/semaphore_v2_2.dir
+/Users/macbookpro/CLionProjects/semaphore_v2.2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/macbookpro/CLionProjects/semaphore_v2.2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
